@@ -34,13 +34,13 @@ public class EdiXmlApplication {
 	        
 	        // Or, configure Smooks programmatically...
 	        Smooks smooks = new Smooks();
-	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d03b-mapping:*"));
+	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d03b-mapping:1.7.0"));
 
 	        try {
 	            StringWriter writer = new StringWriter();
 
 	            smooks.filterSource(new StreamSource(new FileInputStream("PAXLST.edi")), new StreamResult(writer));
-
+	            System.out.println("-.-.-.-.-.-..-.-.-.-.-.-.-..-.-.-.-.-.-.-..-.\n" + writer.toString());
 	            return writer.toString();
 	        } finally {
 	            smooks.close();
@@ -55,6 +55,7 @@ public class EdiXmlApplication {
         System.out.println("======================================\n");
 
         String messageOut = EdiXmlApplication.runSmooksTransform();
+        System.out.println("())))))))))))))))))))))))))" + messageOut);
 
         System.out.println("==============Message Out=============");
         System.out.println(messageOut);
