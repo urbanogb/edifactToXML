@@ -8,7 +8,7 @@ import java.io.StringWriter;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+// import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -34,7 +34,7 @@ public class EdiXmlApplication {
 	        
 	        // Or, configure Smooks programmatically...
 	        Smooks smooks = new Smooks();
-	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d03b-mapping:1.7.0"));
+	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d96a-mapping:1.7.1.0"));
 
 	        try {
 	            StringWriter writer = new StringWriter();
