@@ -66,10 +66,19 @@
 </dependency>
 <dependency>
     <groupId>org.milyn.edi.unedifact</groupId>
+    <artifactId>d03b-mapping</artifactId>
+    <version>1.7.0</version>
+</dependency>
+<dependency>
+    <groupId>org.milyn.edi.unedifact</groupId>
     <artifactId>d96a-mapping</artifactId>
     <version>1.7.1.0</version>
 </dependency>
-        
+<dependency>
+    <groupId>org.milyn.edi.unedifact</groupId>
+    <artifactId>d96b-mapping</artifactId>
+    <version>1.7.0</version>
+</dependency>
         <!-- https://mvnrepository.com/artifact/org.n52.sensorweb/52n-oasis-schema -->
 		<dependency>
 		   <groupId>org.n52.sensorweb</groupId>

@@ -34,7 +34,7 @@ public class EdiXmlApplication {
 	        
 	        // Or, configure Smooks programmatically...
 	        Smooks smooks = new Smooks();
-	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d96a-mapping:1.7.1.0"));
+	        smooks.setReaderConfig(new UNEdifactReaderConfigurator("urn:org.milyn.edi.unedifact:d03b-mapping:1.7.0"));
 
 	        try {
 	            StringWriter writer = new StringWriter();
